@@ -18,7 +18,7 @@ App tezkor, modular va kengaytiriladigan arxitekturaga ega.
 ---
 
 ## Folder Structure
-├─ node_modules/          # NPM paketlari
+``` ├─ node_modules/          # NPM paketlari
 ├─ public/                # Static fayllar (favicon, index.html)
 ├─ src/                   # Asosiy kod
 │  ├─ components/         # UI komponentlar
