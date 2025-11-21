@@ -18,4 +18,23 @@ App tezkor, modular va kengaytiriladigan arxitekturaga ega.
 ---
 
 ## Folder Structure
-
+├─ node_modules/          # NPM paketlari
+├─ public/                # Static fayllar (favicon, index.html)
+├─ src/                   # Asosiy kod
+│  ├─ components/         # UI komponentlar
+│  │  ├─ ui/              # Shadcn yoki tweakcn komponentlari
+│  │  ├─ AddColumnDialog.tsx   # Imtihon jadvaliga ustun qo‘shish dialogi
+│  │  ├─ ExamTable.tsx         # Talabalar jadvali komponenti
+│  │  ├─ ThemeProvider.tsx     # Theme kontekst provider
+│  │  └─ ThemeToggle.tsx       # Dark/Light mode toggle
+│  ├─ hooks/              # Custom hooks
+│  │  ├─ useExamCalculation.ts # Talaba ballarini hisoblash hook
+│  │  ├─ useExamReducer.ts     # Exam state reducer hook
+│  │  └─ useExcelExport.ts     # Excel export hook
+│  ├─ lib/                # Library / helper kodlar
+│  │  └─ utils.ts         # Utility funksiyalar (math, formatting)
+│  ├─ types/              # TypeScript tiplari
+│  │  └─ index.ts         # Student, Column, va boshqa tiplar
+│  ├─ App.tsx             # Root komponent
+│  ├─ index.css           # Tailwind va global CSS
+│  └─ main.tsx            # React entry point
